@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Manufacturer(models.Model):
@@ -15,6 +16,9 @@ class Manufacturer(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('shop:product_list_by_manufacturer', args=[self.slug])
 
 
 class Product(models.Model):
@@ -64,3 +68,6 @@ class Product(models.Model):
 
     def __str__(self):
         return f'{self.name} {self.memory} {self.color}'
+
+    def get_absolute_url(self):
+        return reverse('shop:product_detail', args=[self.id, self.slug])
