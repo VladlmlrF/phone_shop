@@ -1,0 +1,116 @@
+#header {
+    padding:10px 50px;
+    font-size:18px;
+    overflow:auto;
+    background:#3CB371;
+}
+
+#header .logo {
+    font-family: 'Ubuntu', sans-serif;
+    float:left;
+    color:white;
+    font-size:22px;
+    margin-right:10%;
+    text-decoration: none;
+}
+
+#header .cart {
+    float:right;
+    padding-top:4px;
+    color:lightgray;
+}
+
+#content {
+    padding:0 50px;
+    overflow:hidden;
+}
+
+#sidebar {
+    width:220px;
+    padding:30px 20px 0 0;
+    float:left;
+}
+
+#sidebar ul{
+    margin:0;
+    padding:0;
+}
+
+#sidebar ul li {
+    margin:0;
+    list-style:none;
+    padding:10px 14px;
+}
+
+#sidebar ul li a {
+    display:block;
+    text-decoration: none;
+    color:black;
+}
+
+#sidebar ul li.selected {
+    background:#3CB371;
+    border-radius:4px;
+}
+
+#sidebar ul li.selected a {
+    color:white;
+}
+
+#main {
+    float:left;
+    width: 96%;
+    margin-right:-220px;
+    overflow:hidden;
+}
+
+.product-list .item {
+    width:25%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:center;
+    line-height:1.2;
+}
+
+.product-list .item img {
+    width:100%;
+    margin-bottom:8px;
+}
+
+.product-list .item a {
+    text-decoration: none;
+    color:black;
+}
+
+.product-list .item #price {
+    font-weight:bold;
+}
+
+.product-detail {
+    text-align:justify;
+}
+
+.product-detail a {
+    text-decoration: none;
+    color:black;
+}
+
+.product-detail .price {
+    color:#333;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.product-detail img {
+    width:40%;
+    float:left;
+    padding:0 20px 20px 0;
+}
+
+.product-detail h1 {
+    margin-bottom:0;
+}
+
+.product-detail h2 {
+    margin-top:10px;
+}
