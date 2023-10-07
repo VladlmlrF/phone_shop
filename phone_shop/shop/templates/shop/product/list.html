@@ -26,9 +26,11 @@
         <a href="{{ product.get_absolute_url }}">
           <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}">
         </a>
-        <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+        <a href="{{ product.get_absolute_url }}">{{ product.name }} {{ product.memory }} {{ product.color }}</a>
         <br>
-        ${{ product.price }}
+        <div id="price">
+          ${{ product.price }}
+        </div>
       </div>
     {% endfor %}
   </div>
