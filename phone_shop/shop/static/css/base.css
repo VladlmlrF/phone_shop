@@ -1,27 +1,141 @@
+body {
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Ubuntu', sans-serif; font-weight:normal;
+}
+
+a {
+    text-decoration:none;
+    color:#5993bb;
+}
+
+a:hover {
+    color:#77b6e2;
+}
+
+a.button, input[type="submit"] {
+    color:#fff;
+    background:#5993bb;
+    border-radius:4px;
+    padding:10px 20px;
+    font-size:14px;
+    border:0;
+}
+
+a.button.light {
+    color:#666;
+    background:#ededed;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.text-right {
+    text-align:right;
+}
+
+table {
+    width:100%;
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align:left;
+    font-size:14px;
+    padding:10px;
+    margin:0;
+}
+
+tbody tr:nth-child(odd) {
+    background:#efefef;
+}
+
+tbody tr.subtotal {
+    background:#ccc;
+}
+
+thead th, tbody tr.total {
+    background:#5993bb;
+    color:#fff;
+    font-weight:bold;
+}
+
+table.cart {
+    margin-bottom:40px;
+}
+
+table.cart img {
+    width:180px;
+}
+
+tbody td.num {
+    text-align:right;
+}
+
+td input[type="submit"] {
+    font-size:12px;
+    padding:4px 10px;
+}
+
+form p label, form p input {
+    float:left;
+    clear:both;
+}
+
+form p label {
+    font-size:14px;
+    padding-bottom:4px;
+}
+
+form p input {
+    width:300px;
+    font-size:13px;
+    margin-bottom:10px;
+    padding:10px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
+
+ul.errorlist {
+   float:left;
+   color:#ff0000;
+   clear:both;
+   font-size:13px;
+   margin:0 0 0 10px;
+   padding:10px 0;
+}
+
+
 #header {
-    padding:10px 50px;
+    padding:10px 100px;
     font-size:18px;
     overflow:auto;
-    background:#3CB371;
+    background:#ececec;
 }
 
 #header .logo {
     font-family: 'Ubuntu', sans-serif;
     float:left;
-    color:white;
+    color:#333;
     font-size:22px;
     margin-right:10%;
-    text-decoration: none;
 }
 
 #header .cart {
     float:right;
     padding-top:4px;
-    color:lightgray;
 }
 
 #content {
-    padding:0 50px;
+    padding:0 100px;
     overflow:hidden;
 }
 
@@ -44,17 +158,15 @@
 
 #sidebar ul li a {
     display:block;
-    text-decoration: none;
-    color:black;
 }
 
 #sidebar ul li.selected {
-    background:#3CB371;
+    background:#5993bb;
     border-radius:4px;
 }
 
 #sidebar ul li.selected a {
-    color:white;
+    color:#fff;
 }
 
 #main {
@@ -77,22 +189,8 @@
     margin-bottom:8px;
 }
 
-.product-list .item a {
-    text-decoration: none;
-    color:black;
-}
-
-.product-list .item #price {
-    font-weight:bold;
-}
-
 .product-detail {
     text-align:justify;
-}
-
-.product-detail a {
-    text-decoration: none;
-    color:black;
 }
 
 .product-detail .price {

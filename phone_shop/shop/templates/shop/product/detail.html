@@ -15,6 +15,11 @@
       </a>
     </h2>
     <p class="price">${{ product.price }}</p>
+    <form action="{% url 'cart:cart_add' product.id %}" method="post">
+      {{ cart_product_form }}
+      {% csrf_token %}
+      <input type="submit" value="Add to cart">
+    </form>
     <p>CPU: {{ product.cpu }}</p>
     <p>RAM: {{ product.ram }} Gb</p>
     <p>Display diagonal: {{ product.display_diagonal }}"</p>
