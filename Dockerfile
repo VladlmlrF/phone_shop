@@ -1,4 +1,7 @@
-FROM python:3.12-alpine3.18
+FROM python:3.11.5-alpine
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 COPY requirements.txt /temp/requirements.txt
 COPY phone_shop /phone_shop
